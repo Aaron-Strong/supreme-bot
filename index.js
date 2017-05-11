@@ -119,7 +119,7 @@ vo(getProductsBasic)(function (err, productsInstock) {
     });
 });
 
-// TODO : Download more info from url of product
+// TODO : Download more info from url of product ✔
 //      : Add to basket ✔
 //      : Autofill purchase Options ✔
 //      : Bypass Captcha ✔
