@@ -13,6 +13,6 @@
     "vo": "^4.0.2"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^3.19.0"
   }
 }
