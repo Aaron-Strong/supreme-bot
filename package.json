@@ -1,0 +1,19 @@
+{
+  "name": "supreme-6",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "nightmare": "^2.10.0",
+    "readline-sync": "^1.4.7",
+    "vo": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^7.0.0"
+  }
+}
