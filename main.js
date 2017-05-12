@@ -76,12 +76,7 @@ ipcMain.on('start-scrape', (event) => {
 });
 
 ipcMain.on('buy-item', (event, link) => {
-    console.log("POGCHAMP");
     const scraper = require('./supreme').Scraper
     const buyProductFunction = scraper.buyProductFunction
-        // buyProductFunction(link, function (err) {
-        //     console.log(err)
-        // })
-    console.log("LINK: " + link)
-    buyProductFunction(link)
+    buyProductFunction(link, event)
 });

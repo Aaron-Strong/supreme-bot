@@ -59,5 +59,10 @@ ipcRenderer.on('scrape-reply', (event, products) => {
         var hr = document.createElement("hr")
         containerDiv.appendChild(hr)
     }
-
 })
+
+ipcRenderer.on('bought-item', (event, msg) => {
+    console.log("Finsihed buying item")
+    console.log(msg)
+    alert("Item may or may not have been bought\nMaybe we'll know when i add error handling :S")
+});

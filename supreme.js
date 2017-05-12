@@ -97,8 +97,7 @@ var getProductsAdvanced = function* (products) { // Foreach product in stock -->
 //     return
 // }
 
-var buyProduct = function (link) {
-    console.log("Method Called");
+var buyProduct = function (link, event) {
     nightmare.goto(link)
         .wait('body')
         .wait('fieldset#add-remove-buttons > input.button:nth-child(1)')
@@ -130,8 +129,11 @@ var buyProduct = function (link) {
             // The callback that bypasses captcha :kek:
             return
         })
-        .then(console.log("moo"))
+        .then(function () {
+            event.sender.send('bought-item', "moo")
+        })
     return
+
 }
 
 
